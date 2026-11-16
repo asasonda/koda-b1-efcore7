@@ -1,0 +1,12 @@
+@baseUrl = http://localhost:5079
+
+GET {{baseUrl}}/api/v1/product/search
+Accept: application/json
+
+### category dan harga
+GET {{baseUrl}}/api/v1/product/search?minPrice=10000
+Accept: application/json
+
+### pagination
+GET {{baseUrl}}/api/v1/product/search?page=1&pageSize=10&sort=price_desc&maxPrice=50000
+Accept: application/json
